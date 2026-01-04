@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file alias="cs">csgo.png</file>
+        <file>PUBG.png</file>
+        <file>search.png</file>
+        <file>Wa.png</file>
+        <file>focus.png</file>
+        <file>gamer.png</file>
+        <file>hot.png</file>
+        <file>love.png</file>
+        <file>person.png</file>
+        <file>message.png</file>
+        <file>wukong.png</file>
+        <file>Three.png</file>
+        <file>Mc.png</file>
+        <file>Huoying.png</file>
+        <file>apex.1.png</file>
+        <file>computer.png</file>
+        <file>pvp.png</file>
+        <file>wallpaper_engine.png</file>
+        <file>-zshejilei.png</file>
+        <file>skip.png</file>
+        <file>GAME.png</file>
+        <file>HOT (2).png</file>
+        <file>LOVE (2).png</file>
+        <file>first.png</file>
+        <file>lol.png</file>
+        <file>close.png</file>
+    </qresource>
+</RCC>
