@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SearchResultWidget</class>
+ <widget class="QWidget" name="SearchResultWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>搜索结果</string>
+  </property>
+  <property name="windowFlags">
+   <set>Qt::Tool</set>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">SearchResultWidget {
+    background-color: #2a3038;
+    border-radius: 12px;
+    border: 1px solid #3b4250;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   
+   <!-- 顶部标题栏 -->
+   <item>
+    <widget class="QFrame" name="headerFrame">
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+    background-color: #252a31;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 1px solid #3b4250;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>16</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>16</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      
+      <!-- 标题 -->
+      <item>
+       <widget class="QLabel" name="titleLabel">
+        <property name="text">
+         <string>搜索结果</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #e8eaed;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+}</string>
+        </property>
+       </widget>
+      </item>
+      
+      <!-- 水平弹簧 -->
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      
+      <!-- 退出按钮（右上角） -->
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="text">
+         <string>退出</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: transparent;
+    border: 1px solid #3b4250;
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #b0b6bf;
+    font-size: 12px;
+    min-width: 50px;
+}
+
+QPushButton:hover {
+    background-color: #4f8cff;
+    color: #ffffff;
+    border: 1px solid #4f8cff;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   
+   <!-- 评论部分标题 -->
+   <item>
+    <widget class="QLabel" name="commentSectionLabel">
+     <property name="text">
+      <string>相关评论</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel {
+    color: #b0b6bf;
+    padding: 12px 16px 4px 16px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #2a3038;
+}</string>
+     </property>
+    </widget>
+   </item>
+   
+   <!-- 评论列表 -->
+   <item>
+    <widget class="QListWidget" name="commentListWidget">
+     <property name="styleSheet">
+      <string notr="true">QListWidget {
+    background-color: #2a3038;
+    border: none;
+    outline: none;
+    padding: 0px;
+}
+
+QListWidget::item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #3b4250;
+    color: #e8eaed;
+    font-size: 14px;
+    background-color: #2a3038;
+}
+
+QListWidget::item:selected {
+    background-color: #3b4250;
+    color: #4f8cff;
+}
+
+QListWidget::item:hover {
+    background-color: #3b4250;
+    cursor: pointer;
+}</string>
+     </property>
+    </widget>
+   </item>
+   
+   <!-- 底部状态栏 -->
+   <item>
+    <widget class="QFrame" name="footerFrame">
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+    background-color: #252a31;
+    border-top: 1px solid #3b4250;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>16</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>16</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
+      
+      <!-- 结果计数标签 -->
+      <item>
+       <widget class="QLabel" name="resultCountLabel">
+        <property name="text">
+         <string>共找到 0 条评论</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #8b949e;
+    font-size: 12px;
+    background-color: transparent;
+}</string>
+        </property>
+       </widget>
+      </item>
+      
+      <!-- 水平弹簧 -->
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      
+      <!-- 此处移除清空按钮，已移到右上角 -->
+      
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

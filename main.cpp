@@ -5,10 +5,16 @@
 #include <QTimer>
 #include <QDebug>
 #include "logindialog.h"
+#include "publish.h"
+#include "page_profile.h"
+#include "reportitem.h"
+#include "reportmanager.h"
+#include "useritem.h"
+#include "manager.h"
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    // 创建 MainWindow（主界面），但不立即显示
+     //创建 MainWindow（主界面）
     MainWindow mainWindow;
     mainWindow.show();
     // 创建 登录界面
@@ -24,7 +30,6 @@ int main(int argc, char *argv[])
         form.show();      // 显示 Form 界面
         form.activateWindow(); // 激活窗口
     });
-
 
 
 

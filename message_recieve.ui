@@ -50,7 +50,7 @@
      <string>搜索</string>
     </property>
     <property name="icon">
-     <iconset resource="resourse.qrc">
+     <iconset>
       <normaloff>:/search</normaloff>:/search</iconset>
     </property>
     <property name="iconSize">
@@ -78,7 +78,7 @@
      <string>个人中心</string>
     </property>
     <property name="icon">
-     <iconset resource="resourse.qrc">
+     <iconset>
       <normaloff>:/person</normaloff>:/person</iconset>
     </property>
     <property name="iconSize">
@@ -109,7 +109,7 @@
      <string>小白盒</string>
     </property>
     <property name="icon">
-     <iconset resource="resourse.qrc">
+     <iconset>
       <normaloff>:/gamer</normaloff>:/gamer</iconset>
     </property>
     <property name="iconSize">
@@ -136,7 +136,7 @@
        <string>首页</string>
       </property>
       <property name="icon">
-       <iconset resource="resourse.qrc">
+       <iconset>
         <normaloff>:/First</normaloff>:/First</iconset>
       </property>
      </widget>
@@ -147,7 +147,7 @@
        <string>热点</string>
       </property>
       <property name="icon">
-       <iconset resource="resourse.qrc">
+       <iconset>
         <normaloff>:/hot</normaloff>:/hot</iconset>
       </property>
      </widget>
@@ -158,7 +158,7 @@
        <string>关注</string>
       </property>
       <property name="icon">
-       <iconset resource="resourse.qrc">
+       <iconset>
         <normaloff>:/focus</normaloff>:/focus</iconset>
       </property>
      </widget>
@@ -175,7 +175,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>2</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="page">
     <widget class="QLabel" name="label">
@@ -326,8 +326,6 @@ QPushButton[selected3=&quot;true&quot;] {
    </layout>
   </widget>
  </widget>
- <resources>
-  <include location="resourse.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

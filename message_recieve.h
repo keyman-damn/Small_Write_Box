@@ -14,7 +14,7 @@ class message_recieve : public QWidget
 public:
     explicit message_recieve(QWidget *parent = nullptr);
     ~message_recieve();
-
+    void  turnToHome();
 private:
     Ui::message_recieve *ui;
 };

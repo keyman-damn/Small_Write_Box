@@ -1,6 +1,7 @@
 #include "message_recieve.h"
 #include "ui_message_recieve.h"
 #include "QStyle"
+#include "page_profile.h"
 message_recieve::message_recieve(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::message_recieve)
@@ -9,7 +10,7 @@ message_recieve::message_recieve(QWidget *parent) :
     ui->all_comment->setProperty("selected1", true);
     ui->prize->setProperty("selected2", false);
     ui->focus->setProperty("selected3", false);
-
+    connect(ui->pushButton_2,&QPushButton::clicked,this,&message_recieve::turnToHome);
     connect(ui->all_comment, &QPushButton::clicked, this, [=]()
     {
     // 切换显示第一个子窗口
@@ -66,4 +67,9 @@ message_recieve::message_recieve(QWidget *parent) :
 message_recieve::~message_recieve()
 {
     delete ui;
+}
+void message_recieve::turnToHome(){
+    PageProfile *P=new PageProfile ();
+    P->show();
+
 }
